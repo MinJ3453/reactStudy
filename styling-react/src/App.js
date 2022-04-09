@@ -1,8 +1,8 @@
 //import SassComponent from './SassComponent.js';
-//import CSSModule from './CSSModule.js';StyledComponent
-import StyledComponent from './StyledComponent.js';
+//import CSSModule from './CSSModule.js';
 //import classname2 from './classname2.js';
-import { Component } from 'react'
+import { Component } from 'react';
+import StyledComponent from './StyledComponent.js';
 
 class App extends Component{
 

@@ -1,5 +1,5 @@
+import styled, { css } from 'styled-components';
 import React from "react"
-import styled, { css } from 'styled-components'
 
 const Box =styled.div`
     background: ${props => props.color || 'blue'};
@@ -15,6 +15,7 @@ const Button =styled.button`
     padding: 0.5rem;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
     justify-content: center;
     font-size: 1rem;
     font-weight: 600;
@@ -43,10 +44,16 @@ const Button =styled.button`
 `;
 
 const StyledComponent = () =>{
-    <Box color='black'>
-        <Button>안녕하세요</Button>
-        <Button inverted={true}>테두리만</Button>
-    </Box>
-}
+  
+    return(
+        <div>
+          
+            <Box color='black'>
+                <Button>안녕하세요</Button>
+                <Button inverted={true}>테두리만</Button>
+            </Box>
+        </div>
+    );
+};
 
 export default StyledComponent;
